@@ -16,6 +16,13 @@ function Intro() {
               <div className="i-title-item">Content Creator</div>
             </div>
           </div>
+          <div className="i-description">
+            I'm a front-end software engineer with a strong focus on developing
+            cutting-edge web applications using the React library. With a
+            passion for crafting exceptional user experiences, I strive to
+            create visually appealing and responsive interfaces that seamlessly
+            blend creativity and functionality.
+          </div>
         </div>
       </div>
       <div className="i-right">Right</div>
