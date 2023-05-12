@@ -3,6 +3,7 @@
   height: 100vh;
   background-color: bisque;
   flex-direction: row;
+  position: relative;
 }
 .i-left {
   flex: 1;
@@ -12,6 +13,7 @@
 }
 .i-right {
   flex: 1;
+  position: relative;
 }
 .i-left-wrapper {
   padding: 50px;
@@ -59,4 +61,17 @@
 }
 .i-description {
   padding-top: 2px;
+}
+.i-img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  position: absolute;
+}
+.i-bg {
+  clip-path: polygon(100% 0%, 100% 48%, 100% 100%, 29% 100%, 0% 50%, 25% 0);
+  background-color: rgb(36, 122, 2);
+  width: 50vw;
+  height: 100%;
+  position: absolute;
 }

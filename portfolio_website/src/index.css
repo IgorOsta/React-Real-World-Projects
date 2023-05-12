@@ -4,4 +4,8 @@
 }
 body {
   font-family: roboto-condensed;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  size-adjust: initial;
 }
