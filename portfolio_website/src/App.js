@@ -1,9 +1,7 @@
-import './App.css';
+import Intro from "./components/intro/Intro";
 
 function App() {
-  return (
-    <div>App page</div>
-  );
+  return <Intro />;
 }
 
 export default App;

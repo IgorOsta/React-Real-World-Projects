@@ -3,9 +3,5 @@
   src: url("../src/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
 }
 body {
-  margin: 0;
-  font-family: roboto-condensed;
-}
-h2 {
   font-family: roboto-condensed;
 }

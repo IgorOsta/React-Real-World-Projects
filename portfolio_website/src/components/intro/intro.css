@@ -1,0 +1,19 @@
+.i {
+  display: flex;
+  height: 100vh;
+  background-color: bisque;
+  flex-direction: row;
+}
+.i-left {
+  flex: 1;
+}
+.i-right {
+  flex: 1;
+}
+.i-left-wrapper {
+  padding: 30px;
+}
+.i-intro {
+  font-size: 30px;
+  font-weight: 300;
+}
