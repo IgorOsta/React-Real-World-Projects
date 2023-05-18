@@ -1,7 +1,12 @@
-import React from "react";
+import NavBar from "../components/NavBar";
+import "./home.scss";
 
 const Home = () => {
-  return <div>Netflix Home</div>;
+  return (
+    <div className="home">
+      <NavBar />
+    </div>
+  );
 };
 
 export default Home;
