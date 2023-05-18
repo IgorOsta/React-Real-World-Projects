@@ -5,12 +5,7 @@ import "./home.scss";
 const Home = () => {
   return (
     <div className="home">
-      <NavBar/>
-      <img
-        src="https://storage.prompt-hunt.workers.dev/clhjbthwp001bmb08yu6h641s_1"
-        alt=""
-        width="100%"
-      />
+      <NavBar />
       <Featured />
     </div>
   );
