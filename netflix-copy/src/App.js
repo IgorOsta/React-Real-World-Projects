@@ -1,7 +1,8 @@
 import "./App.scss";
+import Home from "./home/Home";
 
 function App() {
-  return <div className="App">Netflix Copy</div>;
+  return <Home/>;
 }
 
 export default App;
