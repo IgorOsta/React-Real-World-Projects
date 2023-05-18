@@ -1,5 +1,27 @@
 .featured {
   height: 90vh;
+
+  .category {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    select {
+      cursor: pointer;
+      background-color: black;
+      border: 1px solid white;
+      border-radius: 5px;
+      color: white;
+      margin-left: 20px;
+      padding: 5px;
+    }
+  }
+
   img {
     height: 100%;
     width: 100%;
@@ -22,16 +44,25 @@
     }
     .buttons {
       display: flex;
+
       button {
+        display: flex;
         padding: 10px 20px;
-        margin-left: 5px;
+        margin-right: 5px;
         border-radius: 5px;
         border: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 500;
 
         &:hover {
           cursor: pointer;
           color: bisque;
         }
+      }
+      span {
+        margin-left: 5px;
       }
     }
   }

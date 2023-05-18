@@ -1,9 +1,23 @@
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import "./featured.scss";
-const Featured = () => {
+const Featured = ({ type }) => {
   return (
     <div className="featured">
+      {type && (
+        <div className="category">
+          <span>{type === "movie" ? "Movies" : " Tv Series "}</span>
+          <select name="genre" id="genre">
+            <option>Genre</option>
+            <option value="adventure">Adventure</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">drama</option>
+            <option value="fantasy">fantasy</option>
+            <option value="thriller">Thriller</option>
+            <option value="western">Western</option>
+          </select>
+        </div>
+      )}
       <img
         src="https://storage.prompt-hunt.workers.dev/clhjbthwp001bmb08yu6h641s_1"
         alt=""
