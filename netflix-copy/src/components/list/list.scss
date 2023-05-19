@@ -1,0 +1,44 @@
+.list {
+  width: 100%;
+  margin-top: 10px;
+  .listTitle {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+  }
+  .wrapper {
+    position: relative;
+
+    .sliderArrow {
+      width: 50px;
+      height: 100%;
+      background-color: rgba(44, 44, 44, 0.577);
+      color: aliceblue;
+      border-radius: 32px;
+      border-width: 1px;
+      position: absolute;
+      z-index: 99;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      cursor: pointer;
+      &.left {
+        left: 0;
+      }
+      &.right {
+        right: 0;
+      }
+    }
+    .container {
+      width: max-content;
+
+      margin-left: 50px;
+      display: flex;
+      margin-top: 20px;
+      transform: translateX(0px);
+      transition: all 1s ease;
+      border-radius: 5px;
+    }
+  }
+}
