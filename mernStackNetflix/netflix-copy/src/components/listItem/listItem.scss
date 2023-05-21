@@ -4,7 +4,6 @@
   background-color: black;
   margin-right: 5px;
   overflow: hidden;
-  position: inherit;
   cursor: pointer;
   .icons {
     color: white;
@@ -16,9 +15,12 @@
     object-fit: cover;
   }
   &:hover {
+    overflow: visible;
+    position: absolute;
+
+    z-index: 999;
     width: 280px;
     height: 280px;
-    position: absolute;
     transition: cubic-bezier(0.23, 1, 0.32, 1);
 
     -webkit-box-shadow: 7px 8px 50px -6px rgba(71, 70, 71, 1);
@@ -27,17 +29,17 @@
     img {
       height: 120px;
     }
-  }
-  .itemInfo {
-    font-size: medium;
-    color: rgb(77, 76, 76);
-    margin-right: 4px;
-    color: white;
-    .itemInfoTop {
-      margin: 2px;
-      .pg {
-        border: 1px solid white;
-        padding: 1px 3px;
+    .itemInfo {
+      font-size: medium;
+      color: rgb(77, 76, 76);
+      margin-right: 4px;
+      color: white;
+      .itemInfoTop {
+        margin: 2px;
+        .pg {
+          border: 1px solid white;
+          padding: 1px 3px;
+        }
       }
     }
   }
