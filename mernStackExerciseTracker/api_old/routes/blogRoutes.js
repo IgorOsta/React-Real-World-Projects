@@ -18,6 +18,7 @@ router.get("/add-blog", (req, res) => {
     .catch((err) => {
       console.log(err);
     });
+    
 });
 
 //! How to retrieve the blog collection with all the blog document from the db?
