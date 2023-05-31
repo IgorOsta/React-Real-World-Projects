@@ -2,21 +2,16 @@ const express = require("express");
 const path = require("path");
 const routes = require("./routes/workouts");
 const mongoose = require("mongoose");
-const Workout = require("./models/Workout");
-const { prototype } = require("module");
+const Workout = require("./models/workoutModel");
 require("dotenv").config();
 const port = process.env.PORT;
 const dbURI = process.env.dbURI;
 //! Credentials for API
 
-
-const workout = new Workout({
-  
-})
+const workout = new Workout({});
 mongoose
   .connect(dbURI, {
     useNewUrlParser: true,
-
     useUnifiedTopology: true,
   })
   .then((result) => {
