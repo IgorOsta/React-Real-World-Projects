@@ -1,5 +1,6 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       //* URLs and navigates using the browser's built-in history stack.
        */}
       <BrowserRouter>
+        <NavBar />
         <div className=" pages ">
           <Routes>
             <Route path="/" element={<Home />} />
