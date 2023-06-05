@@ -5,7 +5,7 @@ import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
 
 const Home = () => {
   const { workouts, dispatch } = useWorkoutsContext();
-
+  
   //* We want to try to fetch data from the api
   useEffect(() => {
     const fetchWorkouts = async () => {
