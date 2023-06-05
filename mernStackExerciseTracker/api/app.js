@@ -1,8 +1,10 @@
 const express = require("express");
 const path = require("path");
-const routes = require("./routes/workouts");
+const workoutRoutes = require("./routes/workouts");
+const userRoutes = require("./routes/user");
 const mongoose = require("mongoose");
 const Workout = require("./models/workoutModel");
+
 require("dotenv").config();
 const port = process.env.PORT;
 const dbURI = process.env.dbURI;
@@ -30,5 +32,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //* routes
-//? setting the end point
-app.use("/api/workouts", routes);
+//? setting the end points
+app.use("/api/workouts", workoutRoutes);
+app.use("/api/user", userRoutes);

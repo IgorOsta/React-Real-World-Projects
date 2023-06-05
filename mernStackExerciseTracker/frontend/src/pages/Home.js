@@ -19,8 +19,16 @@ const Home = () => {
     fetchWorkouts();
   }, [dispatch]);
   return (
-    <div className="Home">
-      <div style={{ display: "flex", margin: "5px" }}>
+    <div className="Home" style={{ display: "flex", }}>
+      <div
+        style={{
+          display: "flex",
+          margin: "5px",
+          flexDirection: "column",
+          flex: "2",
+          marginLeft: "30px",
+        }}
+      >
         {workouts &&
           workouts.map((workout) => (
             <WorkoutDetails key={workout._id} workout={workout} />

@@ -17,10 +17,9 @@ const WorkoutDetails = ({ workout }) => {
   return (
     <div
       style={{
-        border: "1px yellow solid",
+        border: "1px grey dotted",
         margin: "2px",
-        width: "500px",
-        height: "250px",
+        padding: "5px",
       }}
     >
       <h4>{workout.title}</h4>
