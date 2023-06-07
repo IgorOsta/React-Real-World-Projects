@@ -37,7 +37,31 @@ userSchema.statics.signup = async function (email, password) {
   }
   const salt = await bcrypt.genSalt(10);
   const hash = await bcrypt.hash(password, salt);
+
+  //! this.create, creates a new record in the database, and returns it, user:{email,password,_id }
   const user = await this.create({ email, password: hash });
+  return user;
+};
+
+//! Static Login method
+userSchema.statics.login = async function (email, password) {
+  if (!email || !password) {
+    throw Error("All fields must be filled");
+  }
+  //* Check if the email is a valid one.
+  if (!validator.isEmail(email)) {
+    throw Error("Please enter a valid email");
+  }
+
+  //* Find the user with the entered email
+  const user = await this.findOne({ email });
+  if (!user) {
+    throw Error("Incorrect email");
+  }
+  const match = await bcrypt.compare(password, user.password);
+  if (!match) {
+    throw Error("Incorrect password");
+  }
   return user;
 };
 

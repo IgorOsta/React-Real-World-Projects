@@ -1,8 +1,9 @@
-import { WorkoutContext } from "../context/WorkoutContext";
+import { AuthContext } from "../context/AuthContext";
 import { useContext } from "react";
 
+//! Custom hook, to write it simple context + Reducer
 export const useWorkoutsContext = () => {
-  const context = useContext(WorkoutContext);
+  const context = useContext(AuthContext);
   if (!context) {
     throw Error(
       "useWorkoutsContext must be used inside an WorkoutsContextProvider  "
