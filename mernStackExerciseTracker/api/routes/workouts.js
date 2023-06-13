@@ -8,6 +8,10 @@ const {
   deleteWorkout,
   updateWorkout,
 } = require("../controllers/workoutControllers");
+const requireAuth = require("../middleware/requireAuth");
+
+//* check if the token is valid, user is authenticated, this way we can use all the routes
+router.use(requireAuth);
 
 //* GET all workouts
 router.get("/", getWorkouts);
